@@ -38,11 +38,11 @@ docker compose up -d
 Suppose your app's hostname is `traefik-testapp-1.localhost`, you can run:
 
 ```shell
-APP_HOST=traefik-testapp-1 && \
+APP_HOST=traefik-testapp-1.localhost && \
 mkcert \
 -key-file certs/$APP_HOST.key.pem \
 -cert-file certs/$APP_HOST.cert.pem \
-$APP_HOST.localhost
+$APP_HOST
 ```
 
 Update [dynamic/certs.yml](./dynamic/certs.yml) to reference the newly generated
