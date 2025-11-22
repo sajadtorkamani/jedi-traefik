@@ -15,6 +15,7 @@ More docs to follow once I've got a better idea of how to use this.
 
 Visit the [docs](https://github.com/FiloSottile/mkcert) for installation
 instructions for other platforms but on macOS, run:
+
 ```shell
 brew install mkcert
 brew install nss # if you use Firefox
@@ -30,7 +31,6 @@ docker compose up -d
 
 #### Create certificates for host
 
-
 Suppose your app's hostname is `traefik-testapp-1.localhost`, you can run:
 
 ```shell
@@ -41,4 +41,6 @@ mkcert \
 $APP_HOST.localhost
 ```
 
+Update [dynamic/certs.yml](./dynamic/certs.yml) to reference the newly generated
+certificate files.
 
