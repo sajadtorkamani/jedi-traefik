@@ -2,3 +2,5 @@ tls:
   certificates:
     - certFile: /certs/traefik-testapp-1.cert.pem
       keyFile: /certs/traefik-testapp-1.key.pem
+    - certFile: /certs/traefik-testapp-2.cert.pem
+      keyFile: /certs/traefik-testapp-2.key.pem
