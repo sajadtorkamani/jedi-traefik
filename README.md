@@ -34,10 +34,11 @@ docker compose up -d
 Suppose your app's hostname is `traefik-testapp-1.localhost`, you can run:
 
 ```shell
+APP_HOST=traefik-testapp-2 && \
 mkcert \
--key-file certs/traefik-testapp-1.key.pem \
--cert-file certs/traefik-testapp-1.cert.pem \
-traefik-testapp-1.localhost
+-key-file certs/$APP_HOST.key.pem \
+-cert-file certs/$APP_HOST.cert.pem \
+$APP_HOST.localhost
 ```
 
 
