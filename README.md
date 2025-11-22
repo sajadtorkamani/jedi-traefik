@@ -9,6 +9,17 @@ at http://localhost:8080.
 
 More docs to follow once I've got a better idea of how to use this.
 
+## Getting started
+
+### Install `mkcert` & `nss`
+
+Visit the [docs](https://github.com/FiloSottile/mkcert) for installation
+instructions for other platforms but on macOS, run:
+```shell
+brew install mkcert
+brew install nss # if you use Firefox
+```
+
 To start the Docker container, run:
 
 ```shell
