@@ -6,7 +6,7 @@ set -e
 APP_HOST=$1
 KEY_FILE="certs/$APP_HOST.key.pem"
 CERT_FILE="certs/$APP_HOST.cert.pem"
-CERTS_YML_FILE="dynamic/certs.yml"
+CERTS_YML_FILE="dynamic/dev/certs.yml"
 
 # Validate a host name was passed
 if [ -z "$APP_HOST" ]; then
